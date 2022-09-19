@@ -16,3 +16,34 @@ Consolas,
 "Courier New",
 monospace;
 
+a{
+
+text-decoration: none;
+color: #1d69d6;
+
+
+}
+
+
+.check{
+    margin-bottom: 25px;
+}
+
+.container{
+width: 100%;
+padding-right: calc(var(--bs-gutter-x) * .5);
+padding-left: calc(var(--bs-gutter-x) * .5);
+margin-right: auto;
+margin-left: auto;
+}
+
+ul{
+
+    margin: 0;
+    padding: 0;
+}
+
+li{
+list-style: none;
+
+}
