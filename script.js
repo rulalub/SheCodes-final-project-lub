@@ -1,10 +1,5 @@
 
 
-
-let apiKey = "79ee03a958e204e023122acbd595e9dc";
-let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-
-
 function formatDate() {
   let days = [
     "Sunday",
@@ -29,7 +24,7 @@ function formatDate() {
 }
 
 
-let currentDate = document.querySelector("date");
+let currentDate = document.querySelector(".date");
 let currentTime = new Date();
 currentDate.innerHTML = formatDate(currentTime);
 
@@ -47,35 +42,34 @@ function formatDay(time)  {
 function displayForecast(response) {
 let forecast = response.data.daily;
 
+let forecastElement = document.querySelector("#forecast");
 
-}
-
-let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
+let forecastHTML= `<div class="row">`;
+forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
+        `
 
-
-
-<div class="col-sm-2">
-              <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
-              <div class="forecast-icon">
+<div class="col-2">
+              <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
+              
                 <img
-                  src="images/${forecastDay.weather[0].icon}.svg"
-                  alt="partly-cloudy-day"
-                  width="40"
+                  src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+                  alt=" "
+                  width="42"
                 />
-              </div>
-              <div class="forecast-temperature">
-                <span class="forecast-tempearture-max"> ${Math.round(
+              
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-tempearture-max"> ${Math.round(
                   forecastDay.temp.max
                 )}° </span>
-                <span class="forecast-tempearture-min"> ${Math.round(
+                <span class="weather-forecast-tempearture-min"> ${Math.round(
                   forecastDay.temp.min
                 )}° </span>
               </div>
-            </div>`;
+            </div>
+            `;
     }
   });
 
@@ -157,7 +151,7 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelsiusTemperature(event); {
+function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
