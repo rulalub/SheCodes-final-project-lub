@@ -20,6 +20,14 @@ function formatDay(time)  {
 }
 
 
+function displayForecast(response) {
+let forecast = response.
+
+
+}
+
+
+
 let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
