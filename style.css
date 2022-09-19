@@ -4,17 +4,21 @@ background: linear-gradient(
     rgba(255, 255, 255, 0)
 );
 
-background-image: url("https: //assets.wallpapersin4k.org/uploads/2017/04/Weather-Wallpaper-Iphone-3.jpg");
+background-image: url("https: //images.pexels.com/videos/3842794/blue-sky-clouds-cloudy-nature-3842794.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
 background-size: cover;
 background-repeat: no-repeat;
 
-font-monospace: SFMono-Regular,
-Menlo,
-Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace;
+h1 {
+
+
+display: block;
+margin-block-start: 0.67em;
+margin-block-end: 0.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+
+}
+
 
 a{
 
@@ -35,6 +39,66 @@ padding-right: calc(var(--bs-gutter-x) * .5);
 padding-left: calc(var(--bs-gutter-x) * .5);
 margin-right: auto;
 margin-left: auto;
+}
+
+.weather-contanier {
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    border-radius: 20px;
+    font-family: "Fuzzy Bubbles", cursive;
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 630px;
+    padding: 20px 16px 24px;
+    opacity: 0.9;
+}
+
+
+#search-button {
+    background-color: #589eb8;
+    border-color: #589eb8;
+}
+
+#current-button {
+    background-color: #edbd33;
+    border-color: #edbd33;
+}
+
+#current-city {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.weather-temperature img {
+    margin-right: 10px;
+    height: 64px;
+    width: 64px;
+}
+
+.weather-temperature strong {
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.weather-temperature .active {
+    color: black;
+    cursor: default;
+}
+
+.weather-temperature .unit {
+    position: relative;
+    font-size: 24px;
+    top: -4px;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.forecast-tempearture-min {
+    opacity: 0.6;
 }
 
 ul{
