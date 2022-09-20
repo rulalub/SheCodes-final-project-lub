@@ -4,9 +4,10 @@ background: linear-gradient(
     rgba(255, 255, 255, 0)
 );
 
-background-image: url("https: //images.pexels.com/videos/3842794/blue-sky-clouds-cloudy-nature-3842794.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load");
+background-image: url("https: //cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
 background-size: cover;
 background-repeat: no-repeat;
+}
 
 h1 {
 

@@ -33,7 +33,7 @@ function formatDay(time)  {
     let date= new Date (time );
     let days = ["Tue", "Wed", "Thu", "Fri","Sat", "Sun","Mon"];
 
-    let day = dat.getDay();
+    let day = date.getDay();
 
     return days [day];
 }
