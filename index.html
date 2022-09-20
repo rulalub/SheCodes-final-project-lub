@@ -17,12 +17,34 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
 <title>WeatherApp</title>
+
+
+<style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+.background-img{
+
+    background-image: url("clouddiffer.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+</style>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<link rel="stylesheet" href="./styles.css" />
+
+<link rel="stylesheet" href="./style.css" />
 
 
 </head>
 <body>
+
+    <div class="background-img"></div>
 
     <div class="container">
         <div class="weather-container">
@@ -72,10 +94,10 @@
         <ul>
         <li>
          <img src="https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f4a8.png" alt="wind" width="40"/>
-         Wind <span id="wind-speed"></span> km/h
+         Wind <span id="wind-speed">6</span> km/h
 
           <img src="https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f4a6.png" alt="humidity" width="40"/>
-          Humidity <span id="humidity"></span> %
+          Humidity <span id="humidity">60</span> %
            </li>
         </ul>
 
@@ -96,7 +118,7 @@
     </div>
     <div class="col-4 ">
         <h4>Wed</h4>
-        <img class="forecast-icons" src=" image.png" alt="cloudy" />
+        <img class="forecast-icons" src="image.png" alt="cloudy" />
         <p class="max-temp mt-2">
             ↑28° <span class="min-temp">↓15°</span>
         </p>
