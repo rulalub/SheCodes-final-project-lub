@@ -4,14 +4,12 @@ background: linear-gradient(
     rgba(255, 255, 255, 0)
 );
 
-}
-
-    .background-img {
-
-        background-image: url(`./https://d1f5hsy4d47upe.cloudfront.net/64/64c230711022923e74faece965ca3026_t.jpeg`);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
+    background-image: url("images.shecodesplus/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     }
 
     
