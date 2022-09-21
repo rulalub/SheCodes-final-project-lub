@@ -57,7 +57,7 @@ forecast.forEach(function (forecastDay, index) {
                 <img
                   src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                   alt=" "
-                  width="42"
+                  width="30"
                 />
               
               <div class="weather-forecast-temperature">
