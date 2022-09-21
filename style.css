@@ -1,7 +1,5 @@
 
 
-
-
 section{
  padding: 0 100px;
  
@@ -15,17 +13,18 @@ section{
 position: relative;
 max-width: 700px;
 padding: 50px;
-background: ;
+background:  radial-gradient (
+    592px at 48.2% 50%,
+    rgba(247, 247, 244, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+);
+
 box-shadow: 0 5px 15px rgba(0,0,0,.5);
 
 }
 
 
 body{
-
-    background: radial-gradient(592px at 48.2% 50%,
-                rgba(255, 255, 249, 0.6) 0%,
-                rgb(160, 199, 254) 74.6%);
 
     background-image: url("images.shecodesplus/cover.jpg");
     background-size: cover;
