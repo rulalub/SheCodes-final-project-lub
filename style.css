@@ -15,7 +15,7 @@ max-width: 700px;
 padding: 50px;
 background:  radial-gradient (
     592px at 48.2% 50%,
-    rgba(247, 247, 244, 0.6) 0%,
+    rgb(248, 245, 245)
     rgb(160, 199, 254) 74.6%
 );
 
@@ -41,9 +41,11 @@ margin-block-start: 0.67em;
 margin-block-end: 0.67em;
 margin-inline-start: 0px;
 margin-inline-end: 0px;
-
+font-size: 24px;
+font-weight: 100;
+line-height: 28px;
+margin-top: 30px;
 }
-
 
 a{
 
@@ -59,10 +61,13 @@ color: #1d69d6;
 
 .container{
 width: 100%;
-padding-right: calc(var(--bs-gutter-x) * .5);
-padding-left: calc(var(--bs-gutter-x) * .5);
 margin-right: auto;
 margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+margin-top: 150px;
+max-width: 740px;
+
 }
 
 .weather-contanier {
