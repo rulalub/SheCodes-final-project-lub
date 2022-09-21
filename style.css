@@ -79,7 +79,7 @@ max-width: 740px;
     font-family: "Fuzzy Bubbles", cursive;
     font-size: 18px;
     margin: 20px 0;
-    max-width: 630px;
+    max-width: 650px;
     padding: 20px 16px 24px;
     opacity: 0.9;
 }
@@ -118,13 +118,14 @@ max-width: 740px;
 }
 
 .weather-temperature strong {
-    font-size: 64px;
+    font-size: 60px;
     line-height: 1;
     font-weight: 400;
+    color: grey;
 }
 
 .weather-temperature .active {
-    color: black;
+    color: grey;
     cursor: default;
 }
 
@@ -138,7 +139,7 @@ max-width: 740px;
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    
+    font color: grey; 
 }
 
 .forecast-tempearture-min {
@@ -176,11 +177,12 @@ footer {
 }
 
 .gitHub {
-    height: 30px;
+    
     padding: 0 0;
     margin: 5px auto;
     text-align: center;
     color: #457eaa;
+    height: 20px;
 }
 
 .copyright {
