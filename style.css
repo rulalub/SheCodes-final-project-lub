@@ -17,8 +17,9 @@ background: whitesmoke;
 box-shadow: 0 5px 15px rgba(0,0,0,.5);
 height: 0;
 width: 50%;
-padding-bottom: calc(50%*9/16);
+padding-bottom: calc(50%);
 margin: 0 0;
+border-radius: 8px;
 
 }
 
@@ -37,19 +38,14 @@ margin: 0 0;
 .inside{
 width: 50%;
 height: 50%;
-
-
 }
 
 
 body{
 
-background: radial-gradient(
-whitesmoke
-
-);
-
- background-repeat: no-repeat;
+background:whitesmoke;
+font-family: 'PT Mono', monospace;
+background-repeat: no-repeat;
  background-size: cover;
  background-image: url("images.shecodesplus/cover.jpg");
  height: 100vh;
@@ -96,7 +92,7 @@ max-width: 740px;
 .weather-contanier {
     background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     border-radius: 20px;
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: 'PT Mono', monospace;
     font-size: 18px;
     margin: 20px 0;
     max-width: 650px;
@@ -124,6 +120,7 @@ max-width: 740px;
 #current-button {
     background-color: #edbd33;
     border-color: #edbd33;
+    
 }
 
 #current-city {
@@ -134,7 +131,7 @@ max-width: 740px;
 .weather-temperature img {
     margin-right: 10px;
     height: 64px;
-    width: 64px;
+    width: 50px;
 }
 
 .weather-temperature strong {
@@ -142,6 +139,7 @@ max-width: 740px;
     line-height: 1;
     font-weight: 400;
     color: grey;
+    
 }
 
 .weather-temperature .active {
