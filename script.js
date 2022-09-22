@@ -28,9 +28,9 @@ let currentDate = document.querySelector(".date");
 let currentTime = new Date();
 currentDate.innerHTML = formatDate(currentTime);
 
-function formatDay(time)  {
+function formatDay(timestamp)  {
 
-    let date= new Date (time );
+    let date= new Date (timestamp *1000);
     let days = ["Tue", "Wed", "Thu", "Fri","Sat", "Sun","Mon"];
 
     let day = date.getDay();
@@ -88,7 +88,7 @@ function getForecast(coordinates) {
 
 
 function showWeatherData(response) {
-  let temperatureElement = document.querySelector("#currentTemp");
+  let temperatureElement = document.querySelector("#current-temp");
   let cityElement = document.querySelector("#current-city");
   let descriptionElement = document.querySelector("#sky-weather");
   let humidityElement = document.querySelector("#humidity");
