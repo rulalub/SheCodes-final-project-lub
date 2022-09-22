@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="src/style.css" />
+   
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,6 @@
 
 <title>WeatherApp</title>
 
-
-<style>
-
-    
-
-
-
-</style>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <link rel="stylesheet" href="./style.css" />
@@ -38,26 +30,22 @@
         <div class="box">
 
             <div class="wrapper">
-                <div class="inside"></div>
-    
-
-   
-
-    <div class="container">
+               
+          <div class="container">
         <div class="weather-container">
 
        <form id="search-form">
-        <div class="row- x-3">
+        <div class="row x-3">
             <div class="col-sm-6">
 
-                <input type="text" class="form-control-x" id="city-input" placeholder="Enter a city" autocomplete="off"/>
+                <input type="text" class="form-control" id="city-input" placeholder="Enter a city" autocomplete="off"/>
             </div>
             
-            <div>
+            <div class="col-3">
                 <input id="buttonSearch" type="submit" value="Search" class="btn btn-primary" />
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-sm-3">
               <button type="button" class="btn btn-primary" id="current-button">current 
              </button>
 
@@ -65,64 +53,62 @@
         </div>
       </form>
 
-      <div class="check">
-        <div class="col-1">
+      <div class="row check">
+        <div class="col">
         <h1 id="current-city"></h1>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
         <ul>
             <li>Last updated: <span class="date"></span></li>
             <li id="sky-weather"></li>
         </ul>
         </div>
-        
-        </div>
 
-
-      <div class="row">
-        <div class="col-6">
+        <div class="col-4">
             <div class="weather-temperature">
 
                 <img src="images.shecodesplus/img7.webp" alt="clear" id="icon"/>
                 <strong class="current-temperature" id="current-temp"> 24</strong>
                <span class="unit">
-                <a href=" " id="celsius-link" class="active"> °C</a>|
+                <a href=" " id="celsius-link" class="active"> °C</a> |
                 <a href=" " id="fahrenheit-link"> °F </a>
               </span>
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-4">
         <ul>
         <li>
          <img src="https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f4a8.png" alt="wind" width="30"/>
-         Wind <span id="wind-speed">6</span> km/h
-         <br>
-         <br>
-
+         wind <span id="wind-speed"> 6</span>km/h
+         
+          <br/>
+          <br/>
           <img src="https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f4a6.png" alt="humidity" width="30"/>
           Humidity <span id="humidity">60</span> %
            </li>
         </ul>
-
-
-        </div>
+         </div>
       </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
 
 
       <div class="weather-forecast" id="forecast"></div>
       </div>
+      </div>
+      </div>
+      </div>
+</section>
+    
 
 
-
-        </section>
-        </section>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="footer"></div>
 <footer class="last-container">
     <div class="gitHub">
         <a href="  " target="_blank" class="gitHub">GitHub</a>
@@ -132,10 +118,6 @@
 
 
 <script src="script.js"></script>
-
-
-
-
     
 </body>
 </html>
